@@ -2,10 +2,11 @@ import React from "react";
 import Navbar from "./Navbar";
 import SocialLinks from "./SocialLinks";
 import Skills from "./Skills";
-import profilelist from "./profilelist.json";
+import ProfileData from "./profilelist.json";
 
-let profileDet = profilelist;
-console.log(profileDet);
+// ProfileData.map((userdata) => {
+//   console.log(userdata.id);
+// });
 
 export default function ProfileDetails() {
   return (
@@ -14,6 +15,9 @@ export default function ProfileDetails() {
         <Navbar />
       </div>
       <section className="max-w-screen-xl mx-24 ">
+        {ProfileData.map((userdata) => {
+          console.log(userdata.id);
+        })}
         <div className="flex">
           {/* sidebar */}
           <div className="w-[33%] ">
