@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "./Navbar";
 import SocialLinks from "./SocialLinks";
 import Skills from "./Skills";
+import profilelist from "./profilelist.json";
+
+let profileDet = profilelist;
+console.log(profileDet);
 
 export default function ProfileDetails() {
   return (
