@@ -1,8 +1,11 @@
 import React from "react";
+import profileData from "./profile.json";
 
 export default function SocialLinks() {
   return (
     <>
+      {/* {profileData.map((userdata) => (
+        <div key={userdata.username}> */}
       <div className="social-links mt-3">
         <aside>
           <div className="p-2 flex flex-col gap-2 bg-slate-50 ">
@@ -14,7 +17,8 @@ export default function SocialLinks() {
                   Website:
                 </div>
                 <div>
-                  <a href="">prakash.com</a>
+                  <a href="">Website link</a>
+                  {/* <a href="">{userdata.links.website}</a> */}
                 </div>
               </li>
               <li className="flex gap-8 items-center justify-between my-4 border-b pb-2">
@@ -22,7 +26,8 @@ export default function SocialLinks() {
                   <ion-icon name="logo-github" class="w-3 h-3"></ion-icon>
                   Github:
                 </div>
-                <a href="">github.com/gaqlaxy</a>
+                <a href="">Github link</a>
+                {/* <a href="">{userdata.links.GitHub}</a> */}
               </li>
 
               <li className="flex gap-8 items-center justify-between my-4 pb-2">
@@ -30,12 +35,14 @@ export default function SocialLinks() {
                   <ion-icon name="logo-linkedin" class="w-3 h-3"></ion-icon>
                   LinkedIn:
                 </div>
-                <a href="">linkedin.com/prakash</a>
+                <a href="">LinkedIn link</a>
               </li>
             </ul>
           </div>
         </aside>
       </div>
+      {/* </div>
+      ))} */}
     </>
   );
 }
